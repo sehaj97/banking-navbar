@@ -8,7 +8,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-function PhNavbar(props) {
+function BusinessNavbar(props) {
   const location = useLocation();
   const [currentItem, setCurrentItem] = useState(true);
   const [navigation, SetNavigation] = useState(location.state?.navitems);
@@ -117,4 +117,4 @@ function PhNavbar(props) {
   );
 }
 
-export default PhNavbar;
+export default BusinessNavbar;

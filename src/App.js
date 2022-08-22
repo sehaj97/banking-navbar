@@ -3,15 +3,19 @@ import { Routes, Route } from "react-router-dom";
 import MainNavbar from "./components/main-navbar/main-navbar.component";
 import PersonalNavbar from "./components/personal-navbar/personal-navbar.component";
 import PhNavbar from "./components/ph-navbar/ph-navbar.component";
+import BusinessNavbar from "./components/business-navbar/business-navbar.component";
 
 function BA() {
-  return <h1>I am BANK ACCOUNTS</h1>;
+  return <h1>I am BANK ACCOUNTS Page</h1>;
 }
 function CC() {
-  return <h1>I am CREDIT CARDS</h1>;
+  return <h1>I am CREDIT CARDS Page</h1>;
 }
 function M() {
-  return <h1>I am MORTGAGES</h1>;
+  return <h1>I am MORTGAGES Page</h1>;
+}
+function LLC() {
+  return <h1>I am LLC Page</h1>;
 }
 function App() {
   return (
@@ -27,11 +31,13 @@ function App() {
           <Route path="cc" element={<CC />} />
         </Route>
         {/* to do */}
-        <Route path="privatehealth" element={<PersonalNavbar />} />
-        <Route path="business" element={<PersonalNavbar />} />
+        <Route path="business" element={<BusinessNavbar />}>
+          <Route key="m" path="m" element={<BA />} />
+          <Route path="llc" element={<LLC />} />
+        </Route>
         <Route path="commercial" element={<PersonalNavbar />} />
-        <Route path="capitalmarkets" element={<PersonalNavbar />} />
-        <Route path="GAM" element={<PersonalNavbar />} />
+        <Route path="capitalmarkets" element={<PhNavbar />} />
+        <Route path="GAM" element={<BusinessNavbar />} />
       </Route>
     </Routes>
   );

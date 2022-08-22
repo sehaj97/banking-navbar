@@ -55,7 +55,9 @@ function PersonalNavbar(props) {
 
                     {/* desktop items */}
                     {/* left items div */}
-                    <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"></div>
+                    {/* right items div */}
+                    <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                       <div className="hidden sm:block sm:ml-6">
                         <div className="flex space-x-4">
                           {navigation.map((item) => (
@@ -78,8 +80,6 @@ function PersonalNavbar(props) {
                         </div>
                       </div>
                     </div>
-                    {/* right items div */}
-                    <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"></div>
                   </div>
                 </div>
 

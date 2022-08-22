@@ -18,16 +18,15 @@ function MainNavbar() {
         { name: "Bank Accounts", href: "ba", current: true },
         { name: "CreditCards", href: "cc", current: false },
         { name: "Mortgages", href: "m", current: false },
-        { name: "Loans & Lines of Credit", href: "llc", current: false },
       ],
     },
     {
       name: "Private Health",
-      href: "privatehealth/cc",
+      href: "privatehealth/ba",
       current: false,
       subitem: [
-        { name: "Bank Accounts", href: "ba", current: false },
-        { name: "CreditCards", href: "cc", current: true },
+        { name: "Bank Accounts", href: "ba", current: true },
+        { name: "CreditCards", href: "cc", current: false },
       ],
     },
     {
@@ -35,7 +34,7 @@ function MainNavbar() {
       href: "business",
       current: false,
       subitem: [
-        { name: "Mortgages", href: "m", current: false },
+        { name: "Mortgages", href: "m", current: true },
         { name: "Loans & Lines of Credit", href: "llc", current: false },
       ],
     },
