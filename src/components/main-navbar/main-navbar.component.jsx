@@ -12,7 +12,7 @@ function MainNavbar() {
   const [navigation, SetNavigation] = useState([
     {
       name: "Personal",
-      href: "personal",
+      href: "personal/ba",
       current: true,
       subitem: [
         { name: "Bank Accounts", href: "ba", current: true },
@@ -23,11 +23,11 @@ function MainNavbar() {
     },
     {
       name: "Private Health",
-      href: "privatehealth",
+      href: "privatehealth/cc",
       current: false,
       subitem: [
         { name: "Bank Accounts", href: "ba", current: false },
-        { name: "CreditCards", href: "cc", current: false },
+        { name: "CreditCards", href: "cc", current: true },
       ],
     },
     {

@@ -4,27 +4,27 @@ import MainNavbar from "./components/main-navbar/main-navbar.component";
 import PersonalNavbar from "./components/personal-navbar/personal-navbar.component";
 import PhNavbar from "./components/ph-navbar/ph-navbar.component";
 
-function Personal() {
-  return <h1>I am Personal</h1>;
+function BA() {
+  return <h1>I am BANK ACCOUNTS</h1>;
 }
-function Business() {
-  return <h1>I am Business</h1>;
+function CC() {
+  return <h1>I am CREDIT CARDS</h1>;
 }
-function PV() {
-  return <h1>I am privatehealth</h1>;
+function M() {
+  return <h1>I am MORTGAGES</h1>;
 }
 function App() {
   return (
     <Routes>
       <Route path="/" element={<MainNavbar />}>
         <Route path="personal" element={<PersonalNavbar />}>
-          <Route key="ba" path="ba" element={<Personal />} />
-          <Route path="cc" element={<PV />} />
-          <Route path="m" element={<Business />} />
+          <Route key="ba" path="ba" element={<BA />} />
+          <Route path="cc" element={<CC />} />
+          <Route path="m" element={<M />} />
         </Route>
         <Route path="privatehealth" element={<PhNavbar />}>
-          <Route key="ba" path="ba" element={<Personal />} />
-          <Route path="cc" element={<PV />} />
+          <Route key="ba" path="ba" element={<BA />} />
+          <Route path="cc" element={<CC />} />
         </Route>
         {/* to do */}
         <Route path="privatehealth" element={<PersonalNavbar />} />
