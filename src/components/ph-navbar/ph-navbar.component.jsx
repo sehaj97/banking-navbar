@@ -33,14 +33,14 @@ function PhNavbar(props) {
     <>
       {location.state?.navitems ? (
         <>
-          <Disclosure as="nav" className="bg-bmoblue">
+          <Disclosure as="nav" className="bg-white border-black border-b-2">
             {({ open }) => (
               <>
-                <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 my-1">
                   <div className="relative flex items-center justify-between h-16">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                       {/* Mobile menu button*/}
-                      <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                      <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                         <span className="sr-only">Open main menu</span>
                         {open ? (
                           <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -66,9 +66,9 @@ function PhNavbar(props) {
                               to={item.href}
                               className={classNames(
                                 item.current
-                                  ? "bg-white text-black"
-                                  : "text-gray-300 hover:bg-white hover:text-black",
-                                "px-6 py-6 text-sm font-medium"
+                                  ? "bg-white text-bmoblue border-solid border-l-2 border-r-2 border-bmoblue"
+                                  : "text-black hover:bg-white hover:text-black",
+                                "px-6 py-6 text-sm font-medium "
                               )}
                               aria-current={item.current ? "page" : undefined}
                               onClick={() => handleClick(item)}

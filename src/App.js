@@ -32,7 +32,7 @@ function App() {
         </Route>
         {/* to do */}
         <Route path="business" element={<BusinessNavbar />}>
-          <Route key="m" path="m" element={<BA />} />
+          <Route path="m" element={<M />} />
           <Route path="llc" element={<LLC />} />
         </Route>
         <Route path="commercial" element={<PersonalNavbar />} />
