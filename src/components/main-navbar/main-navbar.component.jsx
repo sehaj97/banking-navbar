@@ -38,24 +38,6 @@ function MainNavbar() {
         { name: "Loans & Lines of Credit", href: "llc", current: false },
       ],
     },
-    {
-      name: "Commercial",
-      href: "commercial",
-      current: false,
-      subitem: [{ name: "Bank Accounts", href: "ba", current: false }],
-    },
-    {
-      name: "Capital Markets",
-      href: "capitalmarkets",
-      current: false,
-      subitem: [{ name: "Mortgages", href: "m", current: false }],
-    },
-    {
-      name: "Global Asset Management",
-      href: "GAM",
-      current: false,
-      subitem: [{ name: "CreditCards", href: "cc", current: false }],
-    },
   ]);
   function handleClick(item) {
     item.current = currentItem;

@@ -35,9 +35,6 @@ function App() {
           <Route path="m" element={<M />} />
           <Route path="llc" element={<LLC />} />
         </Route>
-        <Route path="commercial" element={<PersonalNavbar />} />
-        <Route path="capitalmarkets" element={<PhNavbar />} />
-        <Route path="GAM" element={<BusinessNavbar />} />
       </Route>
     </Routes>
   );
